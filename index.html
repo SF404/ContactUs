@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="content">
+                <h1>Contact Us</h1>
+                <p>Need to get in touch with us?<br> Either fill out the form with your inquery or send us an e-mail, we
+                    will reach you as soon as possible. <a href="https://github.com/suhaib-salmani">FAQ</a></p>
+            </div>
+        </div>
+        <div class="right">
+            <form action="https://formspree.io/f/xvoygdev" method="POST">
+                <h2>Get in touch</h2>
+                <input type="text" name="Name" placeholder="Enter your name" id="name" class="dataInput" required>
+                <input type="tel" class="dataInput" name="phone" placeholder="Enter phone number" required
+                    id="phonenumber" pattern="{0-9}{10}">
+                <input type="email" name="E-mail" id="email" class="dataInput" placeholder="Enter e-mail" required>
+                <textarea name="message" id="message" class="dataInput" cols="30" fixed rows="7"
+                    placeholder="Enter your message"></textarea>
+                <input type="submit" value="Submit" class="buttonclick" id="submit">
+                <p>or</p>
+                <a href="mailto:enquiryatsuhaibsmailbox@gmail.com?subject=Query from website support"
+                    class="buttonclick" id="sendEmail">
+                    Send e-mail
+                </a>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

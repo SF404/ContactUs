@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+.main {
+    background-image: linear-gradient(90deg, #a770ef 0%, #cf8bf3 50%, #fdb99b 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    /* border: 2px solid green; */
+    margin: 3rem;
+    width: 100%;
+}
+
+.content {
+    /* border: 2px solid black; */
+    padding: 3rem;
+    color: white;
+    text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.right {
+    margin: 3rem;
+    width: 22rem;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 23rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.dataInput,
+.buttonclick {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    outline: none;
+    border-radius: 0.2rem;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.dataInput:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+}
+
+#message {
+    resize: none;
+}
+
+
+.buttonclick {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+    padding: 0.8rem 0;
+}
+
+
+#submit {
+    margin-top: 2rem;
+    background-color: blueviolet;
+}
+
+#sendEmail {
+    background-color: #1e93d8;
+}
+
+#submit:hover {
+    background-color: black;
+}
+
+#sendEmail:hover {
+    background-color: black;
+}
+
+#submit:active,
+#sendEmail:active {
+    transition: 0s ease-in;
+    background-color: rgb(63, 63, 63);
+}
+
+.right form h2 {
+    font-size: 2rem;
+    text-shadow: 4px 2px 6px black;
+    color: white;
+}
+
+.right form p {
+    text-align: center;
+    margin: -0.4rem 0;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media(max-width:1000px) {
+    .main {
+        flex-direction: column;
+    }
+
+}
